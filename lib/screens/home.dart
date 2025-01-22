@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_responsive_layouts/components/main_drawer.dart';
+import 'package:flutter_responsive_layouts/screens/bebidas.dart';
 import 'package:flutter_responsive_layouts/screens/highlights.dart';
+import 'package:flutter_responsive_layouts/screens/menu.dart';
 import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -14,10 +16,11 @@ class _HomeState extends State<Home> {
   int _currentPage = 0;
   @override
   Widget build(BuildContext context) {
+    final List<Widget> pages = [Highlights(), Menu(), Bebidas()];
     return Scaffold(
       appBar: AppBar(
         title: const Text("Ristorante Panucci"),
-        backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest,
+        backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
         actions: const <Widget>[
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
@@ -61,8 +64,7 @@ class _HomeState extends State<Home> {
           });
         },
       ),
-      body: const Center(
-        child: Highlights()),
+      body: pages.elementAt(_currentPage),
     );
   }
 }

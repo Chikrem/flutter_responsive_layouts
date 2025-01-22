@@ -13,10 +13,12 @@ final String itemDescription;
     return Card(
       clipBehavior: Clip.hardEdge,
       color: Theme.of(context).colorScheme.surfaceContainerHighest,
-      elevation: 0,
+      elevation: 8,
       child: Column(
         children: <Widget>[
           Image(
+            height: 120,
+            width: double.infinity,
             image: AssetImage(imageURI),
             fit: BoxFit.cover,
           ),
