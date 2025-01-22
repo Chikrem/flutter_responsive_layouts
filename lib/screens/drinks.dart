@@ -10,13 +10,13 @@ class Bebidas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: MediaQuery.of(context).orientation == Orientation.landscape ? 3 : 2,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 8.0,
-        childAspectRatio: 1,
+        childAspectRatio: MediaQuery.of(context).orientation == Orientation.landscape ? 1.2 : 1,
       ),
-      itemBuilder: (context, index){
+      itemBuilder: (context, index) {
         return DrinkItem(
           imageURI: items[index]["image"],
           itemTitle: items[index]["name"],

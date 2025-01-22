@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_responsive_layouts/components/main_drawer.dart';
-import 'package:flutter_responsive_layouts/screens/bebidas.dart';
+import 'package:flutter_responsive_layouts/screens/drinks.dart';
 import 'package:flutter_responsive_layouts/screens/checkout.dart';
 import 'package:flutter_responsive_layouts/screens/highlights.dart';
 import 'package:flutter_responsive_layouts/screens/menu.dart';
