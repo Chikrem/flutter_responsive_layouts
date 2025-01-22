@@ -10,7 +10,7 @@ final String itemPrice;
   Widget build(BuildContext context){
     return Card(
       clipBehavior: Clip.hardEdge,
-      color: Color.fromARGB(255, 197, 190, 190),
+      color: const Color.fromARGB(255, 197, 190, 190),
       elevation: 0,
       child: Column(
         children: <Widget>[
