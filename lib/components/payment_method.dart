@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:panucci_ristorante/themes/app_colors.dart';
+import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class PaymentMethod extends StatelessWidget {
 const PaymentMethod({ Key? key }) : super(key: key);

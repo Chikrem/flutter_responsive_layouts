@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:panucci_ristorante/themes/app_colors.dart';
+import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class HighlightItem extends StatelessWidget {
 const HighlightItem({ Key? key, required this.imageURI, required this.itemTitle, required this.itemPrice, required this.itemDescription}) : super(key: key);

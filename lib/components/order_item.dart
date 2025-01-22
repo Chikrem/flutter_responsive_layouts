@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:panucci_ristorante/components/counter_component.dart';
+import 'package:flutter_responsive_layouts/components/counter_component.dart';
 
 class OrderItem extends StatefulWidget {
   const OrderItem(

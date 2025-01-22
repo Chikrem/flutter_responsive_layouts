@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:panucci_ristorante/screens/home.dart';
+import 'package:flutter_responsive_layouts/screens/home.dart';
 
 void main() {
   runApp(const PanucciRistorante());
