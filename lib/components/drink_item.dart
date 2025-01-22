@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DrinkItem extends StatelessWidget {
-const DrinkItem({ Key? key, required this.imageURI, required this.itemTitle, required this.itemPrice }) : super(key: key);
+const DrinkItem({ super.key, required this.imageURI, required this.itemTitle, required this.itemPrice });
 final String imageURI;
 final String itemTitle;
 final String itemPrice;
@@ -10,7 +10,7 @@ final String itemPrice;
   Widget build(BuildContext context){
     return Card(
       clipBehavior: Clip.hardEdge,
-      color: Theme.of(context).colorScheme.surfaceVariant,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       elevation: 0,
       child: Column(
         children: <Widget>[
@@ -24,7 +24,7 @@ final String itemPrice;
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(itemTitle, style: const TextStyle(fontSize: 16),),
-                Text("R\$ " + itemPrice),
+                Text("R\$ $itemPrice"),
               ],
             ),
           ),

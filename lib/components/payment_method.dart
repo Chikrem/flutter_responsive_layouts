@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class PaymentMethod extends StatelessWidget {
-const PaymentMethod({ Key? key }) : super(key: key);
+const PaymentMethod({ super.key });
 
   @override
   Widget build(BuildContext context){

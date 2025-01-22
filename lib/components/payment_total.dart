@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class PaymentTotal extends StatelessWidget {
-  const PaymentTotal({Key? key}) : super(key: key);
+  const PaymentTotal({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,9 +45,9 @@ class PaymentTotal extends StatelessWidget {
         ElevatedButton(
           onPressed: () {},
           style: AppColors.buttonStyle,
-          child: Row(
+          child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const <Widget>[
+              children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(right: 8.0),
                   child: Icon(Icons.account_balance_wallet),

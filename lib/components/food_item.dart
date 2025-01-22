@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FoodItem extends StatelessWidget {
-const FoodItem({ Key? key, required this.itemTitle, required this.itemPrice, required this.imageURI }) : super(key: key);
+const FoodItem({ super.key, required this.itemTitle, required this.itemPrice, required this.imageURI });
   final String itemTitle;
   final String itemPrice;
   final String imageURI;
@@ -11,7 +11,7 @@ const FoodItem({ Key? key, required this.itemTitle, required this.itemPrice, req
     return InkWell(
       child: Card(
         clipBehavior: Clip.hardEdge,
-        color: Theme.of(context).colorScheme.surfaceVariant,
+        color: Theme.of(context).colorScheme.surfaceContainerHighest,
         elevation: 0,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -22,7 +22,7 @@ const FoodItem({ Key? key, required this.itemTitle, required this.itemPrice, req
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(itemTitle, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
-                  Text("R\$ " + itemPrice),
+                  Text("R\$ $itemPrice"),
                 ],
               ),
             ),

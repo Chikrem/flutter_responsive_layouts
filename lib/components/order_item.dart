@@ -3,11 +3,10 @@ import 'package:flutter_responsive_layouts/components/counter_component.dart';
 
 class OrderItem extends StatefulWidget {
   const OrderItem(
-      {Key? key,
+      {super.key,
       required this.imageURI,
       required this.itemTitle,
-      required this.itemPrice})
-      : super(key: key);
+      required this.itemPrice});
   final String imageURI;
   final String itemTitle;
   final String itemPrice;
@@ -22,7 +21,7 @@ class _OrderItemState extends State<OrderItem> {
     return Card(
       elevation: 0,
       clipBehavior: Clip.hardEdge,
-      color: Theme.of(context).colorScheme.surfaceVariant,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

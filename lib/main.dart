@@ -6,7 +6,7 @@ void main() {
 }
 
 class PanucciRistorante extends StatelessWidget {
-const PanucciRistorante({ Key? key }) : super(key: key);
+const PanucciRistorante({ super.key });
 
   @override
   Widget build(BuildContext context){

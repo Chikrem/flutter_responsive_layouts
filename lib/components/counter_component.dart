@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_responsive_layouts/themes/app_colors.dart';
 
 class CounterComponent extends StatefulWidget {
-  const CounterComponent({Key? key}) : super(key: key);
+  const CounterComponent({super.key});
 
   @override
   State<CounterComponent> createState() => _CounterComponentState();
